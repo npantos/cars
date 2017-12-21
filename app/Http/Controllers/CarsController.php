@@ -17,4 +17,8 @@ class CarsController extends Controller
 		$car = Car::getSingleCar($id);
 		return view('cars.show',compact("car"));
 	}
+
+	protected function about(){
+		return view('cars.about');
+	}
 }

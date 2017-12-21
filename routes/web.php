@@ -13,4 +13,6 @@
 
 Route::get('/', 'CarsController@index');
 
+Route::get('/about', 'CarsController@about');
+
 Route::get('/car/{id}', 'CarsController@show')->name('car');;
